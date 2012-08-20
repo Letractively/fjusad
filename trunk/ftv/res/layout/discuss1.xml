@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="128dp"
+        android:layout_y="0dp"
+        android:text="討論區"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="23dp"
+        android:text="戲劇"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="322dp"
+        android:layout_height="73dp"
+        android:layout_x="0dp"
+        android:layout_y="42dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_tab_fs" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父與子"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+    
+        <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="322dp"
+        android:layout_height="73dp"
+        android:layout_x="0dp"
+        android:layout_y="115dp" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_tab_darling" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="絕對達令"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+        
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="190dp"
+        android:text="綜藝"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="322dp"
+        android:layout_height="73dp"
+        android:layout_x="0dp"
+        android:layout_y="206dp" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_tab_ping" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="豬哥會社"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="280dp"
+        android:text="新聞"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="322dp"
+        android:layout_height="73dp"
+        android:layout_x="0dp"
+        android:layout_y="295dp" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_tab_nt" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="時事新聞"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="372dp"
+        android:text="交通台"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="322dp"
+            android:layout_height="73dp"
+            android:layout_x="0dp"
+            android:layout_y="389dp" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_tab_mlb" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美國職棒看民視"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+</AbsoluteLayout>

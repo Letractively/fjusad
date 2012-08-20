@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="05/26節目表"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06:00AM"
+            android:textSize="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="民視六點晨間新聞(普)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06:57AM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="MLB看民視(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:00AM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="美國職棒看民視 -遊騎兵VS老虎(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:00AM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button04"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="美鳳有約(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00PM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button05"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="民視無線午聞(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:30PM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button06"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="豬哥會社(重)(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04:00PM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button07"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="MLB看民視(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04:03PM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button08"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="父與子精華版(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout08"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06:00PM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button09"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="民視無線晚聞(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout09"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06:30PM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button010"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="好膽你就來(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00PM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button011"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="明日之星SUPERSTAR(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00PM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button012"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="豬哥會社(普)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:30PM"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Button13"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="豬哥秀精華版(普)" />
+    </LinearLayout>
+
+</LinearLayout>

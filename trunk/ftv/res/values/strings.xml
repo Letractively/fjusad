@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Welcome">Hello, Welcome to FTV一點通</string>
+    <string name="app_name">FTV一點通</string>
+    <string name="social">社群</string>
+    <string name="list">節目表與日記</string>
+    <string name="news">新聞</string>
+    <string name="tvshow">電視劇</string>
+	<string name="account">facebook帳號</string>
+	<string name="password">密碼</string>
+	<string name="login">登入</string>
+	<string name="game">毆打遊戲</string>
+	<string name="sentenceload">對白下載</string>
+	<string name="pictureload">劇照下載</string>
+	<string name="pictureload_success">下載成功</string>
+	<string name="pictureload_success1">請選擇聯絡人</string>
+	<string name="pictureload_success2">已設為桌面</string>
+	<string name="birthday">生日驚喜</string>
+	<string name="vote">票選活動</string>
+	<string name="sendvote">投票已完成</string>
+	<string name="addvote">已送往民視審核</string>
+	<string name="hint">請問，周玉珊的前夫是誰?</string>
+	<string name="passsentence">通關密語</string>
+	<string name="startgame">開始遊戲</string>
+	<string name="bingolist">該月中獎名單</string>
+	<string name="name">姓名</string>
+	<string name="picturedownload">劇照下載</string>
+	<string name="passphrase">通關密語</string>
+	<string name="enterpass">請輸入通關密語</string>
+	<string name="sendpass">答對!!</string>
+	<string name="lucky">本月份壽星</string>
+	<string name="desc"></string>
+	<string name="confirm">確認</string>
+	<string name="back">返回</string>
+	<string name="download">下載</string>
+	<string name="addfriend">加為好友</string>
+	<string name="addsuccess">已成功加為好友</string>
+	<string name="submitdiary">發表日記</string>
+	<string name="submitsuccess">發表成功</string>
+	<string name="choose">你選擇了</string>
+	<string name="answer_right">恭喜你得到積分1分!!!!</string>
+	<string name="drama1">父與子</string>
+	<string name="vote1">最想要奈特跟宗史哪一個當男朋友?</string>
+	<string name="searchTV">搜尋電視劇</string>
+	<string name="cancel">取消</string>
+	
+	
+	
+	<string-array name="diary_1">
+    	<item>296</item>
+    	<item>297</item>
+    	<item>298</item>
+    	<item>299</item>
+    	<item>300</item>
+    </string-array>
+	
+	<string-array name="diary_2">
+    	<item>公開</item>
+    	<item>朋友</item>
+    	<item>秘密</item>
+    </string-array>
+    
+    <string-array name="vote_all">
+    	<item>最想要奈特跟宗史哪一個當男朋友?</item>
+    	<item>超群跟佳欣會不會在一起?</item>
+    	<item>如果你有一億元你會想買一個完美男友嗎?</item>
+    	<item>最喜歡奈特哪一點?</item>
+    	<item>蕾蕾應不應該遭到報應?</item>
+    	<item>你想要誰當你的絕對達令?</item>
+    </string-array>
+    
+    <string-array name="vote_friend">
+    	<item>最想要奈特跟宗史哪一個當男朋友?</item>
+    </string-array>
+    
+    <string-array name="vote_hot">
+    	<item>如果你有一億元你會想買一個完美男友嗎?</item>
+    	<item>最想要奈特跟宗史哪一個當男朋友?</item>
+    	<item>你想要誰當你的絕對達令?</item>
+    	<item>丁立威跟李大仁你喜歡誰?</item>
+    </string-array>
+    
+	<string-array name="pass_item">
+    	<item>父與子</item>
+    	<item>絕對達令</item>
+    	<item>篤姬</item>
+    </string-array>
+    
+	<string-array name="news_latest">
+    	<item>年度進步獎 林書豪落選</item>
+    	<item>憂女兒被綁 婦領錢求警別管</item>
+    	<item>迎接聖火 倫敦盛大歌舞表演</item>
+    	<item>彰濱工廠氣爆 至少9傷1命危</item>
+    	<item>吐鈔口未吐鈔 民眾觸摸手夾傷</item>
+    	<item>迪斯可女王 唐娜桑瑪病逝</item>
+    </string-array>
+    
+	<string-array name="news_life">
+    	<item>婦粗心丟23萬 警循影像逮偷兒</item>
+    	<item>泰勞撈魚 鑽進桃機管制區</item>
+    	<item>拒掩埋場進駐 內門鄉民抗議</item>
+    	<item>證所稅風暴 台股力守7300點</item>
+    	<item>海外一甲子 自由中國號返台</item>
+    	<item>毒犯翻駁坎逃 餓一天一夜落網</item>
+    </string-array>
+    
+	<string-array name="news_finance">
+    	<item>梅雨季來臨 電子業者供愛心傘</item>
+    	<item>新機美國卡關 HTC信心喊話</item>
+    	<item>驚!巧克力有蟲蠕動 消費者作嘔</item>
+    	<item>韓商惡意併橘子 公平會將約談</item>
+    </string-array>
+    
+	<string-array name="news_policy">
+    	<item>談八田與一  李前總統三度哽咽</item>
+    	<item>馬就職前夕 呂秀蓮聲援嗆馬</item>
+    	<item>變調的520 馬施政荒腔走板</item>
+    	<item>日子真的難過 聽聽農民的心聲</item>
+    </string-array>
+    
+	<string-array name="news_social">
+    	<item>小麥價跌麵包反漲 北檢偵查</item>
+    	<item>洩國家機密? 吳彰裕喊冤</item>
+    	<item>網路賣家控宅配員 亂扔貨品</item>
+    	<item>暴力犯罪集團 專勒索保險公司</item>
+    </string-array>
+
+	<string-array name="news_international">
+    	<item>瑞士山崩 石塊下墜若天崩地裂</item>
+    	<item>北韓挾持中漁船 索560萬贖金</item>
+    	<item>希臘議員就職 就任一天又重選</item>
+    	<item>分手搶狗監護權 男募款打官司</item>
+    </string-array>
+    
+	<string-array name="news_sport">
+    	<item>海碩盃女網 升級WTA挑戰賽</item>
+    	<item>新打擊教練上任 天使開轟歡迎</item>
+    	<item>極限挑戰 攻火山頂縱身躍滑翔</item>
+    	<item>藍鳥45歲游擊手 靠嗜好打拚</item>
+    </string-array>
+    
+	 <string-array name="tvshowlist">
+	    <item>票選活動</item>
+    	<item>通關密語</item>
+    	<item>劇照下載</item>
+    	<item>看圖說故事</item>
+    	<item>親密合照</item>
+    </string-array>
+		
+	<string-array name="drama">
+    	<item>父與子</item>
+    	<item>絕對達令</item>
+    	<item>篤姬</item>
+    	<item>華麗的挑戰</item>
+    	<item>廉政英雄</item>
+    	<item>我可能不會愛你</item>
+    </string-array>
+    
+	<string-array name="favorite_list">
+    	<item>父與子</item>
+    	<item>絕對達令</item>
+    	<item>篤姬</item>
+    	<item>我可能不會愛你</item>
+    </string-array>
+    
+	<string-array name="setting">
+	    <item>推播設定</item>
+    	<item>通知</item>
+    </string-array>
+    
+ <string-array name="information">
+	    <item>2012/05/11 王懷萱已發布電視日記</item>
+    	<item>2012/05/11 陳思涵已發布電視日記</item>
+    	<item>2012/05/11 答對通關密語一題，生日積分已加1分!</item>
+    	<item>2012/08/04 看圖說故事被分享一次，生日積分已加1分!</item>
+    </string-array>
+    
+ <string-array name="broadcast">
+	    <item>鈴聲</item>
+    	<item>震動</item>
+    	<item>允許推播</item>
+    </string-array>
+    
+  <string-array name="favorite_search">
+	    <item>豬哥會社</item>
+    	<item>綜藝大集合</item>
+    	<item>新兵日記</item>
+    	<item>新兵進行曲</item>
+    </string-array>
+    
+    <string-array name="sex">
+	    <item>男</item>
+    	<item>女</item>
+    </string-array>
+</resources>

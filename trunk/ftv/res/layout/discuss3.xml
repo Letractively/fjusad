@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="78dp"
+        android:layout_y="0dp"
+        android:text="絕對達令  討論區"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_x="0dp"
+        android:layout_y="32dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_tab_folder" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="絕對達令第1集文字預告"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="281dp"
+        android:layout_x="2dp"
+        android:layout_y="62dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="292dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="　　　筱菲終於下定決心要跟暗戀已久的石綸告白，不料卻誤把內衣遞給石綸，出糗不說，告白當然失敗，筱菲在失意的時候遇到了超級~~~~怪的業務員雷霧霧，經過一陣舌燦蓮花之後，筱菲上網訂製了一個完全屬於自己的絕對達令。 
+
+不僅有超美形的外表、健壯的體態，而且啟動裝置竟然是要用kiss！更讓筱菲害羞的是這完美情人無時不刻都在積極的想展現自己的”夜用功能”，讓筱菲快要無法招架！ 
+
+從小到大，看著筱菲一直戀愛必敗的青梅竹馬-嚴宗史，也發現了突然出現在筱菲身邊的神秘男子，但是他絕對想不到這是筱菲上網訂購而來的”機器戀人”。 " />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="260dp"
+        android:layout_height="33dp"
+        android:layout_x="2dp"
+        android:layout_y="446dp"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="65dp"
+        android:layout_height="34dp"
+        android:layout_x="257dp"
+        android:layout_y="446dp"
+        android:text="回復" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="338dp"
+        android:text="回覆"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="298dp"
+        android:layout_height="84dp"
+        android:layout_x="6dp"
+        android:layout_y="360dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="陳思涵:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="具惠善好正!!!!!!!!" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableLayout>
+
+</AbsoluteLayout>

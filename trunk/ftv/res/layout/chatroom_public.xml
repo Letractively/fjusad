@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+
+<TextView
+android:id="@+id/textView1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="父與子　聊天室"
+android:textSize="25dp"
+android:layout_gravity="center"
+android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<LinearLayout
+android:id="@+id/linearLayout1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+
+<ImageButton
+android:id="@+id/ImageButton06"
+android:layout_width="54dp"
+android:layout_height="50dp"
+android:src="@drawable/pine" />
+
+
+<ImageButton
+android:id="@+id/imageButton1"
+android:layout_width="54dp"
+android:layout_height="52dp"
+android:src="@drawable/juicy" />
+
+
+<ImageButton
+android:id="@+id/imageButton2"
+android:layout_width="54dp"
+android:layout_height="52dp"
+android:src="@drawable/bob" />
+
+
+<ImageButton
+android:id="@+id/imageButton3"
+android:layout_width="51dp"
+android:layout_height="48dp"
+android:src="@drawable/kachu" />
+
+
+<ImageButton
+android:id="@+id/imageButton4"
+android:layout_width="49dp"
+android:layout_height="46dp"
+android:src="@drawable/jill" />
+
+
+<ImageButton
+android:id="@+id/imageButton6"
+android:layout_width="46dp"
+android:layout_height="44dp"
+android:src="@drawable/tatiana" />
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout2"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+
+<ImageButton
+android:id="@+id/ImageButton01"
+android:layout_width="54dp"
+android:layout_height="52dp"
+android:src="@drawable/bob" />
+
+<TextView
+android:id="@+id/textView2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="友騰怎麼可能變好人"
+android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout4"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+
+<ImageButton
+android:id="@+id/ImageButton04"
+android:layout_width="49dp"
+android:layout_height="46dp"
+android:src="@drawable/jill" />
+
+<TextView
+android:id="@+id/textView4"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="怎麼不可能!!!"
+android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout7"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+
+<ImageButton
+android:id="@+id/imageButton7"
+android:layout_width="54dp"
+android:layout_height="50dp"
+android:src="@drawable/pine" />
+
+<TextView
+android:id="@+id/textView7"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="對阿他根本就是騙人的，想要他爸的錢"
+android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout5"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+
+<ImageButton
+android:id="@+id/ImageButton03"
+android:layout_width="51dp"
+android:layout_height="48dp"
+android:src="@drawable/kachu" />
+
+<TextView
+android:id="@+id/textView5"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="我根本不在意"
+android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout3"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+
+<ImageButton
+android:id="@+id/ImageButton02"
+android:layout_width="54dp"
+android:layout_height="52dp"
+android:src="@drawable/juicy" />
+
+<TextView
+android:id="@+id/textView3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="可是他很帥耶!!!!"
+android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout8"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+
+<ImageButton
+android:id="@+id/ImageButton07"
+android:layout_width="46dp"
+android:layout_height="44dp"
+android:src="@drawable/tatiana" />
+
+<TextView
+android:id="@+id/textView8"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="下次見面會要去嗎?!!!"
+android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout6"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+
+<ImageButton
+android:id="@+id/ImageButton05"
+android:layout_width="52dp"
+android:layout_height="49dp"
+android:src="@drawable/jenny" />
+
+<TextView
+android:id="@+id/textView6"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="在台南我就去!!!"
+android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout9"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+
+<AutoCompleteTextView
+android:id="@+id/autoCompleteTextView1"
+android:layout_width="227dp"
+android:layout_height="match_parent"
+android:layout_weight="0.35" >
+
+<requestFocus />
+
+</AutoCompleteTextView>
+
+<Button
+android:id="@+id/button1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="發送" />
+
+</LinearLayout>
+
+</LinearLayout>

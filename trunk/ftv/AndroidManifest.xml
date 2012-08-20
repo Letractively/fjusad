@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="your.retest.namespace"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        android:icon="@drawable/app_pic"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".RetestActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>            
+        </activity>
+        
+		<activity android:name="Menu"></activity>
+        <activity android:name="Tvshowlist"></activity>
+        <activity android:name="Tvshowlist_game"></activity>
+        <activity android:name="Tvshowlist_game1"></activity>
+        <activity android:name="Pictureload"></activity>
+        <activity android:name="Pictureload1"></activity>
+        <activity android:name="Pictureload2"></activity>
+        <activity android:name="menu"></activity>
+        <activity android:name="Calendar"></activity>
+        <activity android:name="Program_schedule"></activity>
+		<activity android:name="Alldiary"></activity>
+        <activity android:name="Diary"></activity>
+        <activity android:name="Diary_1"></activity>
+        <activity android:name=".Diary_3"></activity>
+        <activity android:name=".Diary_2"></activity>
+        <activity android:name="Favorite"></activity>
+        <activity android:name="Personalpage"></activity>
+        <activity android:name="Personalpage_friend"></activity>
+        <activity android:name="Personalpage_self"></activity>
+        <activity android:name="Personalpage_edit"></activity>
+        <activity android:name="Chatroom"></activity>
+        <activity android:name="Friendlist"></activity>
+        <activity android:name="Passsentence"></activity>
+        <activity android:name="News"></activity>
+        <activity android:name="Jeremy"></activity>
+        <activity android:name="Jeremy_2"></activity>
+        <activity android:name=".News_latest"></activity>
+        <activity android:name="Vote_hot"></activity>
+        <activity android:name="SportsActivity"></activity>
+        <activity android:name="Vote_all"></activity>
+        <activity android:name="Vote_add"></activity>
+        <activity android:name="Vote"></activity>
+        <activity android:name="Vote1"></activity>
+        <activity android:name="Vote_friend"></activity>
+        <activity android:name="LatestVote"></activity>
+        <activity android:name="News_life"></activity>
+        <activity android:name="News_finance"></activity>
+        <activity android:name="News_policy"></activity>
+        <activity android:name="News_social"></activity>
+        <activity android:name="News_international"></activity>
+        <activity android:name="News_sport"></activity>
+        <activity android:name="Newpreview"></activity>
+        <activity android:name="Show_intro"></activity>
+        <activity android:name="Chatroom_public"></activity>
+        <activity android:name="News_policy_show"></activity>
+        <activity android:name="Setting"></activity>
+		<activity android:name="Information"></activity>
+		<activity android:name="Broadcast"></activity>
+		<activity android:name="Favorite_search"></activity>
+		<activity android:name="Camera_2"></activity>
+		<activity android:name="Camera"></activity>
+		<activity android:name="PictureDIY_1"></activity>
+		<activity android:name="PictureDIY_2"></activity>
+		<activity android:name="PictureDIY_3"></activity>
+		<activity android:name="PictureDIY_4"></activity>
+		<activity android:name="CalendarActivity"></activity>
+		<activity android:name="GridAdapter"></activity>
+    </application>
+
+</manifest>
