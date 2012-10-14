@@ -1,0 +1,3 @@
+# Module testsa
+# RPC service class, partial path of RPC policy file
+testsa.client.GreetingService, 8C7291C85454573B77096481D53B13DE.gwt.rpc

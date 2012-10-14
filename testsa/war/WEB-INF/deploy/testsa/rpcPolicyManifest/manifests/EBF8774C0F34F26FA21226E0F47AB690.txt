@@ -1,0 +1,2 @@
+serviceClass: testsa.client.GreetingService
+path: 8C7291C85454573B77096481D53B13DE.gwt.rpc
