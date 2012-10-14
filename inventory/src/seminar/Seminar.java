@@ -1,24 +1,33 @@
 package seminar;
 
+import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 import javax.jdo.annotations.Element;
+import com.google.appengine.api.datastore.Key;
 
+import java.util.Calendar;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Date;
 
 @PersistenceCapable
 public class Seminar {
 
+    @PrimaryKey
+    @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+    private Key key;
+
 	@Persistent
-	@PrimaryKey
 	private String name;
 	@Persistent
-	private String date;
+	private Date date;
 	@Persistent
 	private int maxRegistrations;    //一個講座可容納的最大報名數
 
+	//make it bi-directional association 
+	//theSeminar is in the Registration
 	@Persistent(mappedBy = "theSeminar")
 	@Element(dependent = "true") 
 	private List <Registration> register;    //報名者資料
@@ -26,7 +35,7 @@ public class Seminar {
 	@Persistent
 	private int count = 0;  //計算報名人數
 	
-    public Seminar(String newName, String newDate, int newNumber) {//constructor
+    public Seminar(String newName, Date newDate, int newNumber) {//constructor
     	name = newName;
     	date = newDate;
     	maxRegistrations = newNumber;
@@ -37,17 +46,21 @@ public class Seminar {
     
     public Seminar() {//constructor
     	name = "N/A";
-    	date = "N/A";
+        Calendar calendar = Calendar.getInstance(); 
+    	date = calendar.getTime(); //get current time
     	maxRegistrations = 0;
     	register = new ArrayList<Registration>();
     }
     
+    public Long getId(){
+    	return key.getId();
+    }
     
     public String getName(){
     	return name;
     }
     
-    public String getDate(){
+    public Date getDate(){
     	return date;
     }
 

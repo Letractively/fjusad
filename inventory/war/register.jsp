@@ -18,8 +18,8 @@
 <form action="/seminar/register" method="post">
 <input type="hidden" name="SNO" value="<%=request.getParameter("SNO") %>" />
 <input type="hidden" name="NAME" value="<%=user.getNickname() %>" />
-姓名:<%=user.getNickname() %><p>
-<input type="submit" value="新增" /><p>
+目前登入帳號為:<%=user.getNickname() %><p>
+<input type="submit" value="確定報名" /><p>
 </form>
 
 <%

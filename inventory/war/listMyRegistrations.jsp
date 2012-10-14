@@ -41,7 +41,7 @@ try{
 %>
 <tr>
 	<td><%=s.getName()%></td>
-	<td><%=s.getDate()%></td>
+	<td><%=MyDateUtil.format(s.getDate())%></td>
 </tr>
 <%	
 		} // if

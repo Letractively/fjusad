@@ -3,8 +3,10 @@
 <%@ page import="javax.jdo.PersistenceManager" %>
 <%@ page import="javax.jdo.Query" %>
 <%@ page import="java.util.List" %>
-<%@ page import="seminar.*" %>
+<%@ page import="shared.MyDateUtil" %>
 <%@ page import="shared.PMF" %>
+<%@ page import="seminar.*" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -31,11 +33,11 @@ try {
 %>
 <tr>
 <td><%=s.getName() %></td>
-<td><%=s.getDate() %></td>
+<td><%=MyDateUtil.format(s.getDate()) %></td>
 <td><%=s.getMaxRegistrations() %></td>
 <td><%=s.getCount() %></td>
-<td><a href="/register.jsp?SNO=<%=s.getName()%>">報名</a></td>
-<td><a href="/listAllRegistrations.jsp?SNO=<%=s.getName()%>">所有報名資料</a></td>
+<td><a href="/register.jsp?SNO=<%=s.getId()%>">報名</a></td>
+<td><a href="/listAllRegistrations.jsp?SNO=<%=s.getId()%>">所有報名資料</a></td>
 </tr>
 <% 
         }// for

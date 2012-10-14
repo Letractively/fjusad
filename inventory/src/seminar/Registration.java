@@ -28,7 +28,7 @@ public class Registration {
     	return id;
     }
     public void setId(Long i) {
-    	id = i;;
+    	id = i;
     }
     
 	public String getName(){

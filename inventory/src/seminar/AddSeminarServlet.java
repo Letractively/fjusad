@@ -1,6 +1,9 @@
 package seminar;
 import java.io.IOException;
+import java.util.Date;
+
 import shared.PMF;
+import shared.MyDateUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
@@ -15,10 +18,15 @@ public class AddSeminarServlet extends HttpServlet {
 
 		request.setCharacterEncoding("BIG5");
 		String seminarID = request.getParameter("SID");
-		String seminarDate = request.getParameter("DATE");
 		String max_S = request.getParameter("MAX");
-		int max = Integer.parseInt(max_S);
-	
+		Date seminarDate = MyDateUtil.getTodayDate(); 
+		int max = 0;
+	    try {
+	    seminarDate = MyDateUtil.parse(request.getParameter("DATE")); 
+		max = Integer.parseInt(max_S);
+	    } catch (NumberFormatException e){
+	    	//implementation is needed
+	    }
 		PersistenceManager pm = PMF.get().getPersistenceManager();
 		try{
 			Seminar p = new Seminar(seminarID,seminarDate, max);

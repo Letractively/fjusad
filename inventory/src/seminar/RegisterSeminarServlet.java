@@ -15,7 +15,14 @@ public class RegisterSeminarServlet extends HttpServlet {
             throws IOException, ServletException {
 
 		request.setCharacterEncoding("BIG5");
-		String seminarID = request.getParameter("SNO");
+		String seminarID_S = request.getParameter("SNO");
+		Long seminarID = 0L;
+		try{
+			seminarID = Long.parseLong(seminarID_S);
+		}
+		catch (NumberFormatException e){
+			//implementation is needed
+		}
 		String name = request.getParameter("NAME");
 		
 		PersistenceManager pm = PMF.get().getPersistenceManager();

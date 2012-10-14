@@ -14,9 +14,17 @@
 <table border="1">
 <tr><td>©m¦W</td>
 <%
-String sNo = request.getParameter("SNO");
+String seminarID_S = request.getParameter("SNO");
+Long seminarID = 0L;
+try{
+	seminarID = Long.parseLong(seminarID_S);
+}
+catch (NumberFormatException e){
+	//implementation is needed
+}
+
 PersistenceManager pm = PMF.get().getPersistenceManager();
-Seminar s = pm.getObjectById(Seminar.class, sNo);
+Seminar s = pm.getObjectById(Seminar.class, seminarID);
 List<Registration> reg = s.getAllRegistrations();
 for (Registration r:reg){
 %>
