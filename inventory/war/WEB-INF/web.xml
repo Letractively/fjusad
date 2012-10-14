@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+
+  <servlet>
+    <servlet-name>helloServlet</servlet-name>
+    <servlet-class>inventory.HelloServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>helloServlet</servlet-name>
+    <url-pattern>/inventory/hello</url-pattern>
+  </servlet-mapping> 
+
+  <servlet>
+    <servlet-name>sellServlet</servlet-name>
+    <servlet-class>inventory.SellProductServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>sellServlet</servlet-name>
+    <url-pattern>/inventory/sell</url-pattern>
+  </servlet-mapping> 
+
+  <servlet>
+    <servlet-name>stockServlet</servlet-name>
+    <servlet-class>inventory.StockProductServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>stockServlet</servlet-name>
+    <url-pattern>/inventory/stock</url-pattern>
+  </servlet-mapping> 
+
+  <servlet>
+    <servlet-name>addInvServlet</servlet-name>
+    <servlet-class>inventory.AddProductServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>addInvServlet</servlet-name>
+    <url-pattern>/inventory/add</url-pattern>
+  </servlet-mapping> 
+
+  <servlet>
+    <servlet-name>addSemServlet</servlet-name>
+    <servlet-class>seminar.AddSeminarServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>addSemServlet</servlet-name>
+    <url-pattern>/seminar/add</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+    <servlet-name>regSemServlet</servlet-name>
+    <servlet-class>seminar.RegisterSeminarServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>regSemServlet</servlet-name>
+    <url-pattern>/seminar/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>addTripServlet</servlet-name>
+    <servlet-class>trip.AddTripServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>addTripServlet</servlet-name>
+    <url-pattern>/trip/add</url-pattern>
+  </servlet-mapping>
+
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
