@@ -1,7 +1,7 @@
-#Trip Application
+# Trip Application
 
 = Introduction =
-Trip Application
+== Trip Application ==
 * This project is an example with low level datastore API
 
 
