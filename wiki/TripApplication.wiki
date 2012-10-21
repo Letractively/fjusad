@@ -1,0 +1,14 @@
+#Trip Application
+
+= Introduction =
+Trip Application
+* This project is an example with low level datastore API
+
+
+= Details =
+
+* Trip Application
+ * Entity objects: Trip, HolidayTrip, RegularTrip
+ * Control objects: AddTripServlet
+ * Boundary objects: getAllTrips.jsp, createTrip.jsp, PersistenceTrip
+ * Utility objects: TripFactory
