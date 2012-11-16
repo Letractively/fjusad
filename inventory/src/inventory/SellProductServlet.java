@@ -5,6 +5,8 @@ import shared.PMF;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.jdo.PersistenceManager;
+import javax.jdo.Transaction;
+
 
 public class SellProductServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -15,10 +17,17 @@ public class SellProductServlet extends HttpServlet {
 
 		Long productID = Long.parseLong(request.getParameter("PNO"));
 		PersistenceManager pm = PMF.get().getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
 		try{
+			tx.begin();
 			Product p = pm.getObjectById(Product.class, productID);
 		    p.sell(1);
+		    pm.makePersistent(p);
+		    tx.commit();
 		} finally {
+            if (tx.isActive()) {
+                tx.rollback();
+            }
 		    pm.close();
 		}
 		
