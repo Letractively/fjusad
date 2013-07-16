@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>新增旅程資料</title>
+<title>新增旅程資料 </title>
 </head>
 <body>
 <form action="/trip/add" method="post">
