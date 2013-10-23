@@ -10,6 +10,7 @@ import javax.jdo.PersistenceManager;
 public class RegisterSeminarServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final String nextJSP = "/sem_index.jsp";
+	private static final String errorJSP = "/sem_error.jsp";
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
@@ -26,16 +27,21 @@ public class RegisterSeminarServlet extends HttpServlet {
 		String name = request.getParameter("NAME");
 		
 		PersistenceManager pm = PMF.get().getPersistenceManager();
+		boolean result = true;
 		try{ 
 			//Registration r =new Registration(name, phone,ssn);
 			Seminar s = pm.getObjectById(Seminar.class, seminarID);
-			s.reserve(name);
+			result = s.reserve(name);
 			//s.reserve(r);
 		} finally {
 		    pm.close();
 		}
-		
-		response.sendRedirect(nextJSP);
+		if (result) {
+			response.sendRedirect(nextJSP);
+		}
+		else {
+			response.sendRedirect(errorJSP);	
+		}
 		
     }
 	public void doPost(HttpServletRequest request, HttpServletResponse response) 

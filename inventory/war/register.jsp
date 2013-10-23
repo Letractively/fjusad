@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8">
-<title>create seminar</title>
+<title>register</title>
 </head>
 <body>
 	<%
@@ -25,9 +25,8 @@
 <%
     } else {
 %>
-<p>請
-<a href="<%= userService.createLoginURL(request.getRequestURI()) %>">登入</a>
-您的google帳號</p>
+<p>尚未登入您的google帳號</p>
+<a href="sem_index.jsp">回到首頁</a>
 <%
     }
 %>
