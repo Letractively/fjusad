@@ -1,18 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=utf8"
+    pageEncoding="utf8"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
-<title>½d¨Òµ{¦¡</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>ç¯„ä¾‹ç¨‹å¼</title>
 </head>
 <body>
-»²¤j¸êºŞ¨t²Î¤ÀªR»P³]­p½d¨Òµ{¦¡ (2012.10)
+è¼”ä»å¤§å­¸è³‡è¨Šç®¡ç†å­¸ç³»ç³»çµ±åˆ†æèˆ‡è¨­è¨ˆç¯„ä¾‹ç¨‹å¼(2013.10 rev.)<p>
+**We will revise the system with utf8 soon
 	<ul>
-		<ol><a href="/getAllTrips.jsp">®Èµ{ºŞ²z</a>(low level Datastore API)</ol>
-		<ol><a href="/inv_index.jsp">°Ó«~ºŞ²z</a>(JDO API)</ol>
-		<ol><a href="/sem_index.jsp">Á¿®yºŞ²z</a>(JDO API & User Service)</ol>
+		<ol><a href="/getAllTrips.jsp">æ—…ç¨‹ç®¡ç†</a>(low level Datastore API/utf8)</ol>
+		<ol><a href="/inv_index.jsp">å•†å“ç®¡ç†</a>(JDO API/big5)</ol>
+		<ol><a href="/sem_index.jsp">è¬›åº§ç®¡ç†</a>(JDO API & User Service/big5)</ol>
 	</ul>
 </body>
 </html>

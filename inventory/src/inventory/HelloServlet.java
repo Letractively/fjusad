@@ -8,7 +8,15 @@ public class HelloServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
-			response.getWriter().println("HELLO");
+			request.setCharacterEncoding("UTF-8");
+			String name = request.getParameter("name");
+			if (name != null){
+				response.getWriter().println(name);
+			}
+			else
+			{
+				response.getWriter().println("HELLO");
+			}
 		}
 
 }//HelloServlet

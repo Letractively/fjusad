@@ -24,16 +24,16 @@ public class Seminar {
 	@Persistent
 	private Date date;
 	@Persistent
-	private int maxRegistrations;    //¤@­ÓÁ¿®y¥i®e¯Çªº³Ì¤j³ø¦W¼Æ
+	private int maxRegistrations;    //å ±åäººæ•¸ä¸Šé™
 
 	//make it bi-directional association 
 	//theSeminar is in the Registration
 	@Persistent(mappedBy = "theSeminar")
 	@Element(dependent = "true") 
-	private List <Registration> register;    //³ø¦WªÌ¸ê®Æ
+	private List <Registration> register;    //å ±åè€…è³‡æ–™
 	
 	@Persistent
-	private int count = 0;  //­pºâ³ø¦W¤H¼Æ
+	private int count = 0;  //ç›®å‰å ±åäººæ•¸
 	
     public Seminar(String newName, Date newDate, int newNumber) {//constructor
     	name = newName;
@@ -117,7 +117,7 @@ public class Seminar {
  		else
  			return false;
  	}
- 	//reserve()ÀË¬d¬O§_ÃBº¡©Î³ø¦WªÌ¸ê®Æ­«ÂĞ
+ 	//reserve() å ±å
 
 
     

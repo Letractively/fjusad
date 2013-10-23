@@ -1,83 +1,69 @@
 package trip;
 
 public abstract class Trip {
+	//
+
 	/*
-	private final int REGULAR_TRIP = 0;
-	private final int HOLIDAY_TRIP = 1;
-	private int category;
-	*/
-	
+	 * private final int REGULAR_TRIP = 0; private final int HOLIDAY_TRIP = 1;
+	 * private int category;
+	 */
+
 	private long id;
 	private String name;
 	private int days;
 	private int kilometers;
 
-    public Trip(long someid, String someName, int someDays, int someKilometers) {
-    	id = someid;
-    	name = someName;
-    	days = someDays;
-    	kilometers = someKilometers;
-    }
+	public Trip(long someid, String someName, int someDays, int someKilometers) {
+		id = someid;
+		name = someName;
+		days = someDays;
+		kilometers = someKilometers;
+	}
 
 	public Trip(String someName, int someDays, int someKilometers) {
 		id = 0;
-    	name = someName;
-    	days = someDays;
-    	kilometers = someKilometers;
-    }
-    
-	public long getId(){
+		name = someName;
+		days = someDays;
+		kilometers = someKilometers;
+	}
+
+	public long getId() {
 		return id;
 	}
 
 	/*
-	public String getCategory(){
-		String result = "";
-		switch (category){
-		case REGULAR_TRIP: 
-			result = "¥¿±`®Èµ{";
-			break;
-		case HOLIDAY_TRIP:
-			result = "°²¤é®Èµ{";
-			break;
-		}
-		return result;
-	}
-	*/
-	
+	 * public String getCategory(){ String result = ""; switch (category){ case
+	 * REGULAR_TRIP: result = "ä¸€èˆ¬æ—…éŠ"; break; case HOLIDAY_TRIP: result = "å‡æ—¥æ—…éŠ";
+	 * break; } return result; }
+	 */
+
 	public abstract String getCategory();
 
-	
-    public String getName(){
-    	return name;
-    }
-    
-    public int getDays(){
-    	return days;
-    }
-    
-    public int getKilometers(){
-    	return kilometers;
-    }
-    
-    public abstract double getCharge();
-    /*
-    public double getCharge(){
-    	if (category == REGULAR_TRIP) {
-    		return 200 * getDays() + 1.5 * getKilometers();
-    	}
-    	else
-    	{
-        	if( getDaysKilometersCharge()> getFixCharge())
-        		return getFixCharge();
-        	else
-        		return getDaysKilometersCharge();    		
+	public String getName() {
+		return name;
+	}
 
-    	}
-    }
-    */
-    
-    public String toString(){
-    	return name + ": " + days + " days, " + kilometers + " kilometers. Total charge is: " + getCharge();
-    }   
+	public int getDays() {
+		return days;
+	}
+
+	public int getKilometers() {
+		return kilometers;
+	}
+
+	public abstract double getCharge();
+
+	/*
+	 * public double getCharge(){ if (category == REGULAR_TRIP) { return 200 *
+	 * getDays() + 1.5 * getKilometers(); } else { if(
+	 * getDaysKilometersCharge()> getFixCharge()) return getFixCharge(); else
+	 * return getDaysKilometersCharge();
+	 * 
+	 * } }
+	 */
+
+	public String toString() {
+		return name + ": " + days + " days, " + kilometers
+				+ " kilometers. Total charge is: " + getCharge();
+	}
 }
