@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=utf8"
+    pageEncoding="utf8"%>
 <%@ page import="javax.jdo.PersistenceManager" %>
 <%@ page import="javax.jdo.Query" %>
 <%@ page import="java.util.List" %>
@@ -10,8 +10,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
-<title>©Ò¦³Á¿®y</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>æ‰€æœ‰è¬›åº§</title>
 </head>
 <body>
 
@@ -27,7 +27,7 @@ try {
     List<Seminar> results = (List<Seminar>) query.execute();
     if (!results.isEmpty()) {
 %>
-<tr><td>Á¿®y</td><td>¤é´Á</td><td>¦WÃB</td><td>³ø¦W¤H¼Æ</td><td></td><td></td>
+<tr><td>è¬›åº§</td><td>æ—¥æœŸ</td><td>åé¡</td><td>å ±åäººæ•¸</td><td></td><td></td>
 <%
         for (Seminar s : results) {
 %>
@@ -36,13 +36,13 @@ try {
 <td><%=MyDateUtil.format(s.getDate()) %></td>
 <td><%=s.getMaxRegistrations() %></td>
 <td><%=s.getCount() %></td>
-<td><a href="/register.jsp?SNO=<%=s.getId()%>">³ø¦W</a></td>
-<td><a href="/listAllRegistrations.jsp?SNO=<%=s.getId()%>">©Ò¦³³ø¦W¸ê®Æ</a></td>
+<td><a href="/register.jsp?SNO=<%=s.getId()%>">å ±å</a></td>
+<td><a href="/listAllRegistrations.jsp?SNO=<%=s.getId()%>">æ‰€æœ‰å ±åè³‡æ–™</a></td>
 </tr>
 <% 
         }// for
     } else {
-    	out.println("µLÁ¿®y¸ê®Æ!");
+    	out.println("ç„¡è¬›åº§è³‡æ–™!");
     }
 } finally {
     query.closeAll();
@@ -50,6 +50,6 @@ try {
 }
 %>
 </table>
-<a href="sem_index.jsp">¦^¨ì­º­¶</a>
+<a href="sem_index.jsp">å›žåˆ°é¦–é </a>
 </body>
 </html>

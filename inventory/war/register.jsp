@@ -1,12 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=utf8"
+    pageEncoding="utf8"%>
 <%@ page import="com.google.appengine.api.users.User" %>
 <%@ page import="com.google.appengine.api.users.UserService" %>
 <%@ page import="com.google.appengine.api.users.UserServiceFactory" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <title>create seminar</title>
 </head>
 <body>
@@ -18,16 +18,16 @@
 <form action="/seminar/register" method="post">
 <input type="hidden" name="SNO" value="<%=request.getParameter("SNO") %>" />
 <input type="hidden" name="NAME" value="<%=user.getNickname() %>" />
-¥Ø«eµn¤J±b¸¹¬°:<%=user.getNickname() %><p>
-<input type="submit" value="½T©w³ø¦W" /><p>
+ç›®å‰ç™»å…¥å¸³è™Ÿç‚º:<%=user.getNickname() %><p>
+<input type="submit" value="ç¢ºå®šå ±å" /><p>
 </form>
 
 <%
     } else {
 %>
-<p>½Ğ
-<a href="<%= userService.createLoginURL(request.getRequestURI()) %>">µn¤J</a>
-±zªºgoogle±b¸¹</p>
+<p>è«‹
+<a href="<%= userService.createLoginURL(request.getRequestURI()) %>">ç™»å…¥</a>
+æ‚¨çš„googleå¸³è™Ÿ</p>
 <%
     }
 %>

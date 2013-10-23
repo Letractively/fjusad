@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=utf8"
+    pageEncoding="utf8"%>
 <%@ page import="com.google.appengine.api.users.User" %>
 <%@ page import="com.google.appengine.api.users.UserService" %>
 <%@ page import="com.google.appengine.api.users.UserServiceFactory" %>
@@ -7,8 +7,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
-<title>Á¿®yºÞ²z</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>è¬›åº§ç®¡ç†</title>
 </head>
 <body>
 <%
@@ -16,23 +16,23 @@
     User user = userService.getCurrentUser();
     if (user != null) {
 %>
-<p>±z¥Ø«e¬O¥H¬° <%= user.getNickname() %>µn¤J! ¦pªG³o¤£¬O±zªº±b¸¹,±z¥i¥H
-<a href="<%= userService.createLogoutURL(request.getRequestURI()) %>">µn¥X</a>,¦A­«·sµn¤J!</p>
+<p>æ‚¨ç›®å‰æ˜¯ä»¥ç‚º <%= user.getNickname() %>ç™»å…¥! å¦‚æžœé€™ä¸æ˜¯æ‚¨çš„å¸³è™Ÿ,æ‚¨å¯ä»¥
+<a href="<%= userService.createLogoutURL(request.getRequestURI()) %>">ç™»å‡º</a>,å†é‡æ–°ç™»å…¥!</p>
 <%
     } else {
 %>
-<p>½Ð
-<a href="<%= userService.createLoginURL(request.getRequestURI()) %>">µn¤J</a>,
-¥H«K¬d¬Ý­Ó¤HªºÁ¿®y³ø¦Wª¬ªp</p>
+<p>è«‹
+<a href="<%= userService.createLoginURL(request.getRequestURI()) %>">ç™»å…¥</a>,
+ä»¥ä¾¿æŸ¥çœ‹å€‹äººçš„è¬›åº§å ±åç‹€æ³</p>
 <%
     }
 %>
 
 
 	<ul>
-		<ol><a href="listAllSeminars.jsp">Á¿®y¸ê°T</a></ol>
-		<ol><a href="createSeminar.jsp">·s¼WÁ¿®y</a></ol>
-		<ol><a href="listMyRegistrations.jsp">§Úªº³ø¦W</a></ol>
+		<ol><a href="listAllSeminars.jsp">è¬›åº§è³‡è¨Š</a></ol>
+		<ol><a href="createSeminar.jsp">æ–°å¢žè¬›åº§</a></ol>
+		<ol><a href="listMyRegistrations.jsp">æˆ‘çš„å ±å</a></ol>
 	</ul>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=utf8"
+    pageEncoding="utf8"%>
 <%@ page import="javax.jdo.PersistenceManager" %>
 <%@ page import="javax.jdo.Query" %>
 
@@ -13,47 +13,53 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <title>list all my registrations</title>
 </head>
 <body>
 <table border="1">
-<tr><td>Á¿®y</td><td>¤é´Á</td>
+<tr><td>è¬›åº§</td><td>æ—¥æœŸ</td>
 <%
 UserService userService = UserServiceFactory.getUserService();
 User user = userService.getCurrentUser();
-
-PersistenceManager pm = PMF.get().getPersistenceManager();
-Query query = pm.newQuery(Seminar.class);
+if (user != null) {
+	PersistenceManager pm = PMF.get().getPersistenceManager();
+	Query query = pm.newQuery(Seminar.class);
 //Query query = pm.newQuery(Registration.class);
 //query.setFilter("username == nameParam");
 //query.declareParameters("String nameParam");
 
-try{
+	try{
 //List<Registration> results = (List<Registration>) query.execute(user.getNickname());
 //List<Registration> results = (List<Registration>) query.execute();
 //for (Registration r:results){
 	//Seminar s = r.getSeminar();
 	
-	List<Seminar> results = (List<Seminar>) query.execute();
-	for (Seminar s:results){
-		if (s.checkRegistration(user.getNickname())){
+		List<Seminar> results = (List<Seminar>) query.execute();
+		for (Seminar s:results){
+			if (s.checkRegistration(user.getNickname())){
 %>
 <tr>
 	<td><%=s.getName()%></td>
 	<td><%=MyDateUtil.format(s.getDate())%></td>
 </tr>
 <%	
-		} // if
-	}// for
+			} // if
+		}// for
 
-} finally {
-    query.closeAll();
-    pm.close();
-}
-
-%>
+	} finally {
+    	query.closeAll();
+    	pm.close();
+	}
+}//if logged in
+else{
+	%>
+	<tr>
+<td>**å°šæœªç™»å…¥**</td>
+<td></td>
+</tr>
+<%} %>
 </table>
-<a href="sem_index.jsp">¦^¨ì­º­¶</a>
+<a href="sem_index.jsp">å›åˆ°é¦–é </a>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=utf8"
+    pageEncoding="utf8"%>
 <%@ page import="javax.jdo.PersistenceManager" %>
 <%@ page import="java.util.List" %>
 <%@ page import="seminar.*" %>
@@ -7,12 +7,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <title>list all registrations</title>
 </head>
 <body>
 <table border="1">
-<tr><td>©m¦W</td>
+<tr><td>å§“å</td>
 <%
 String seminarID_S = request.getParameter("SNO");
 Long seminarID = 0L;
@@ -35,6 +35,6 @@ for (Registration r:reg){
 <%}// for
     pm.close();%>
 </table>
-<a href="sem_index.jsp">¦^¨ì­º­¶</a>
+<a href="sem_index.jsp">å›åˆ°é¦–é </a>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=utf8"
+    pageEncoding="utf8"%>
 <%@ page import="javax.jdo.PersistenceManager" %>
 <%@ page import="javax.jdo.Query" %>
 <%@ page import="java.util.List" %>
@@ -8,8 +8,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
-<title>À³¶i³f°Ó«~</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>æ‡‰é€²è²¨å•†å“</title>
 </head>
 <body>
 
@@ -25,7 +25,7 @@ try {
     List<Product> results = (List<Product>) query.execute();
     if (!results.isEmpty()) {
 %>
-<tr><td>²£«~½s¸¹</td><td>Ãþ§O</td><td>²£«~´y­z</td><td>¦s¶q</td><td>¦w¥þ¦s¶q</td><td> </td>
+<tr><td>ç”¢å“ç·¨è™Ÿ</td><td>é¡žåˆ¥</td><td>ç”¢å“æè¿°</td><td>å­˜é‡</td><td>å®‰å…¨å­˜é‡</td><td> </td>
 <%
         for (Product p : results) {
         	if (p.getInventory()<=p.getReorderPoint()){
@@ -36,19 +36,19 @@ try {
 <td><%=p.getDesc() %></td>
 <td><%=p.getInventory() %></td>
 <td><%=p.getReorderPoint() %></td>
-<td><a href="/inventory/stock?PNO=<%=p.getId()%>">¶i³f</a>
+<td><a href="/inventory/stock?PNO=<%=p.getId()%>">é€²è²¨</a>
 </tr>
 <% 
         	}// if
         }// for
     } else {
-    	out.println("µL°Ó«~¸ê®Æ!");
+    	out.println("ç„¡å•†å“è³‡æ–™!");
     }
 } finally {
     query.closeAll();
 }
 %>
 </table>
-<a href="inv_index.jsp">¦^¨ì­º­¶</a>
+<a href="inv_index.jsp">å›žåˆ°é¦–é </a>
 </body>
 </html>
