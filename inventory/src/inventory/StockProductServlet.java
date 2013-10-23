@@ -13,8 +13,9 @@ public class StockProductServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
-        response.setContentType("text/html;charset=BIG5");
-        request.setCharacterEncoding("BIG5");
+		
+        response.setContentType("text/html;charset=utf8");
+        request.setCharacterEncoding("UTF-8");
 
         Long productID = Long.parseLong(request.getParameter("PNO"));
 		PersistenceManager pm = PMF.get().getPersistenceManager();

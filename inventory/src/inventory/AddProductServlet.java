@@ -13,7 +13,7 @@ public class AddProductServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
 
-		request.setCharacterEncoding("BIG5");
+		request.setCharacterEncoding("UTF-8");
 		//String productID = request.getParameter("PNO");
 		String category_S = request.getParameter("category");
 		String desc = request.getParameter("desc");

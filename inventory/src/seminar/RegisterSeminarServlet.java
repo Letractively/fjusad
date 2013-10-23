@@ -14,7 +14,7 @@ public class RegisterSeminarServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
 
-		request.setCharacterEncoding("BIG5");
+		request.setCharacterEncoding("UTF-8");
 		String seminarID_S = request.getParameter("SNO");
 		Long seminarID = 0L;
 		try{

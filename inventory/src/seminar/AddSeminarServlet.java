@@ -16,7 +16,7 @@ public class AddSeminarServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
 
-		request.setCharacterEncoding("BIG5");
+		request.setCharacterEncoding("UTF-8");
 		String seminarID = request.getParameter("SID");
 		String max_S = request.getParameter("MAX");
 		Date seminarDate = MyDateUtil.getTodayDate(); 

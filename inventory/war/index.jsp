@@ -9,11 +9,10 @@
 </head>
 <body>
 輔仁大學資訊管理學系系統分析與設計範例程式(2013.10 rev.)<p>
-**We will revise the system with utf8 soon
 	<ul>
-		<ol><a href="/getAllTrips.jsp">旅程管理</a>(low level Datastore API/utf8)</ol>
-		<ol><a href="/inv_index.jsp">商品管理</a>(JDO API/big5)</ol>
-		<ol><a href="/sem_index.jsp">講座管理</a>(JDO API & User Service/big5)</ol>
+		<ol><a href="/getAllTrips.jsp">旅程管理</a>(low level Datastore API)</ol>
+		<ol><a href="/inv_index.jsp">商品管理</a>(JDO API)</ol>
+		<ol><a href="/sem_index.jsp">講座管理</a>(JDO API & User Service)</ol>
 	</ul>
 </body>
 </html>

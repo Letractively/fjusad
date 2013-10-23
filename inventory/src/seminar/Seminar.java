@@ -34,11 +34,17 @@ public class Seminar {
 	
 	@Persistent
 	private int count = 0;  //目前報名人數
+	private static int minMaxRegistraion = 5; //至少5人可參加
 	
     public Seminar(String newName, Date newDate, int newNumber) {//constructor
     	name = newName;
     	date = newDate;
-    	maxRegistrations = newNumber;
+    	if (newNumber > minMaxRegistraion){
+    		maxRegistrations = newNumber;
+    	}
+    	else{
+    		maxRegistrations = minMaxRegistraion;
+    	}
    	register = new ArrayList<Registration>();
    	//register.add(new Registration("ben", "12345", "12345"));
    	//count = 1;
@@ -118,7 +124,5 @@ public class Seminar {
  			return false;
  	}
  	//reserve() 報名
-
-
     
 }
