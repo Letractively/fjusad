@@ -33,7 +33,7 @@ public class SellProductServlet extends HttpServlet {
             }
 		    pm.close();
 		}
-		
+
 		response.sendRedirect(nextJSP);
 		
     }
